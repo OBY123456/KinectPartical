@@ -14,6 +14,11 @@ public class PersonControl : MonoBehaviour
         kinectManager.FindUser += UserDetected;
     }
 
+    private void Start()
+    {
+        
+    }
+
     public void UserDetected(int userIndex)
     {
         if(userIndex < PersonGroup.Length)
